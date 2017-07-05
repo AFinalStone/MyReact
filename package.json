@@ -1,0 +1,13 @@
+{
+  "name": "myreact",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+
+  },
+  "author": "AFinalStone",
+  "license": "ISC"
+}
