@@ -12,7 +12,7 @@ class HelloWorld extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.hello}>Congratulations on your success,OK</Text>
+        <Text style={styles.hello}>Congratulations on your success</Text>
       </View>
     )
   }
@@ -29,4 +29,4 @@ var styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('hello', () => HelloWorld);
+AppRegistry.registerComponent('myreact', () => HelloWorld);
