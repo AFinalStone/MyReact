@@ -267,7 +267,7 @@ npm start
 具体的js打包命令如下：
 
 ```
-    react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output app/src/main/assets/index.android.bundle --assets-dest app\src\main\res
+    react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
 
 ```
 
