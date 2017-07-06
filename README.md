@@ -266,9 +266,8 @@ npm start
 
 你也可以使用Android Studio来打release包！其步骤基本和原生应用一样，只是在每次编译打包之前需要先执行js文件的打包(即生成离线的jsbundle文件,这样APP进入RN编写的页面会直接调用本身的JS代码，不需要去服务器请求)。
 具体的js打包命令如下：
-
 ```
-    react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+    react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output app/src/main/assets/index.android.bundle  --assets-dest app/src/main/res
 
 ```
 
