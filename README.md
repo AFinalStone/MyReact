@@ -1,4 +1,4 @@
-## React Native学习<三> 把ReactNative 嵌入到原生代码中
+## React Native学习<四> 把ReactNative 嵌入到原生代码中
 ## 核心概念
 
 如果你正准备从头开始制作一个新的应用，那么React Native会是个非常好的选择。但如果你只想给现有的原生应用中添加一两个视图或是业务流程，React Native也同样不在话下。只需简单几步，你就可以给原有应用加上新的基于React Native的特性、画面和视图等。
@@ -19,7 +19,7 @@
 
 ## 开发环境准备
 
-首先按照[开发环境搭建教程](getting-started.html)来安装React Native在安卓平台上所需的一切依赖软件（比如`npm`）。
+首先按照[开发环境搭建教程](https://github.com/AFinalStone/ReactNative01)来安装React Native在安卓平台上所需的一切依赖软件（比如`npm`）。
 
 ## 在应用中添加JS代码
 
