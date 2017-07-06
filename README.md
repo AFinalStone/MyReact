@@ -274,3 +274,29 @@ npm start
 其中--bundle-output后面的两个参数指出assets和res文件夹的具体路径，注意把上述命令中的路径替换为你实际项目的路径。如果assets目录不存在，需要提前自己创建一个。
 
 然后在Android Studio中正常生成release版本即可！
+
+## 打包好的release版本app运行在许多X64CPU的手机上，打开RN页面直接闪退
+
+错误：
+```
+java.lang.UnsatisfiedLinkError: dlopen failed: "xxx/libgnustl_shared.so" is 32-bit instead of 64-bit
+```
+解决方案：
+
+1、在项目的根目录的 gradle.properties里面添加一行代码
+```gradle
+android.useDeprecatedNdk=true.
+```
+2、在project的root目录下的build.gradle中添加如下代码。
+
+```gradle
+defaultConfig {
+    ···
+    ndk{
+        abiFilters "armeabi-v7a","x86"
+    }
+    packagingOptions {
+        exclude "lib/arm64-v8a/librealm-jni.so"
+    }
+}
+```
