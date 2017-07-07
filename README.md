@@ -32,11 +32,11 @@ curl -o .flowconfig https://raw.githubusercontent.com/facebook/react-native/mast
 ```
 - 1.npm init`创建了一个空的node模块(过程需要填写其实就是创建了一个package.json描述文件)。
 
-![流程](picture/npm_init01.png)
+![流程](https://raw.githubusercontent.com/AFinalStone/ReactNative02/master/picture/npm_init01.png)
 
 - 2.npm install`则创建了node_modules目录并把react和react-native下载到了其中。
 
-![新增的部分](picture/npm_install.png)
+![新增的部分](https://raw.githubusercontent.com/AFinalStone/ReactNative02/master/picture/npm_install.png)
 
 - 3.**这一步非必需，可跳过**，curl命令，其实质是`下载`.flowconfig配置文件，这个文件用于约束js代码的写法。
 
@@ -64,7 +64,12 @@ curl -o .flowconfig https://raw.githubusercontent.com/facebook/react-native/mast
 
   },
   "author": "AFinalStone",
-  "license": "ISC"
+  "license": "ISC",
+    "dependencies": {
+      "react": "^15.4.2",
+      "react-native": "^0.41.2",
+      "react-native-storage": "^0.2.1"
+    }
 }
 ```
 
@@ -260,7 +265,7 @@ npm start
 
 编译执行一切顺利进行之后，在进入到MyReactActivity时应该就能立刻从packager中读取JavaScript代码并执行和显示：
 
-![结果](picture/result.gif)
+![结果](https://raw.githubusercontent.com/AFinalStone/ReactNative02/master/picture/result.gif)
 
 ## 在Android Studio中打包
 
